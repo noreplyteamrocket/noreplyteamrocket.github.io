@@ -107,10 +107,10 @@ function initCarousel() {
 // Store Data
 const storeItems = {
     featured: [
-        { id: 'ultra-ball-100', name: 'Ultra Ball (100)', price: 800, description: 'The best performance with a high catch rate!', image: 'images/ultra-balls.png', badge: 'BEST SELLER' },
-        { id: 'super-incubator-3', name: 'Super Incubator (3)', price: 1500, description: 'Hatches Eggs 1.5× faster than a standard Incubator', image: 'images/super-incubator.png', badge: 'POPULAR' },
-        { id: 'star-piece-8', name: 'Star Piece (8)', price: 1000, description: 'Increases Stardust earned by 50% for 30 minutes', image: 'images/star-piece.png' },
-        { id: 'premium-raid-pass-3', name: 'Premium Raid Pass (3)', price: 250, description: 'Join a Raid Battle at a Gym', image: 'images/raid-pass.png' }
+        { id: 'ultra-ball-100', name: 'Ultra Ball (100)', price: 800, description: 'The best performance with a high catch rate!', image: 'images/ultra_ball.png', badge: 'BEST SELLER' },
+        { id: 'super-incubator-3', name: 'Super Incubator (3)', price: 1500, description: 'Hatches Eggs 1.5× faster than a standard Incubator', image: 'images/incubator.png', badge: 'POPULAR' },
+        { id: 'star-piece-8', name: 'Star Piece (8)', price: 1000, description: 'Increases Stardust earned by 50% for 30 minutes', image: 'images/star.png' },
+        { id: 'premium-raid-pass-3', name: 'Premium Raid Pass (3)', price: 250, description: 'Join a Raid Battle at a Gym', image: 'images/premium.png' }
     ],
     boxes: [
         { 
@@ -118,7 +118,7 @@ const storeItems = {
             name: 'Adventure Box', 
             price: 1480, 
             description: 'Contains: 3 Super Incubators, 3 Incubators, 3 Lucky Eggs, 3 Star Pieces', 
-            image: 'images/adventure-box.png',
+            image: 'images/adventure_box.png',
             badge: 'LIMITED'
         },
         { 
@@ -126,7 +126,7 @@ const storeItems = {
             name: 'Ultra Box', 
             price: 2500, 
             description: 'Contains: 10 Premium Raid Passes, 10 Super Incubators, 4 Incense, 4 Star Pieces', 
-            image: 'images/ultra-box.png',
+            image: 'images/ultra_box.png',
             badge: 'BEST VALUE'
         },
         { 
@@ -134,14 +134,14 @@ const storeItems = {
             name: 'Special Box', 
             price: 480, 
             description: 'Contains: 2 Premium Raid Passes, 2 Incense, 2 Star Pieces', 
-            image: 'images/special-box.png'
+            image: 'images/special_box.png'
         },
         { 
             id: 'community-box', 
             name: 'Community Day Box', 
             price: 1280, 
             description: 'Contains: 1 Elite Fast TM, 1 Elite Charged TM, 30 Ultra Balls, 3 Star Pieces', 
-            image: 'images/community-box.png'
+            image: 'images/community_day_box.png'
         }
     ],
     coins: [
@@ -185,7 +185,7 @@ const storeItems = {
             name: 'Daily Free Bundle', 
             price: 0, 
             description: 'Contains: 10 Poké Balls', 
-            image: 'images/daily-bundle.png',
+            image: 'images/free_bundle.png',
             badge: 'FREE'
         },
         { 
@@ -193,7 +193,7 @@ const storeItems = {
             name: 'Special Bundle', 
             price: 1, 
             description: 'Contains: 1 Remote Raid Pass, 10 Great Balls', 
-            image: 'images/special-bundle.png',
+            image: 'images/special_bundle.png',
             badge: 'LIMITED'
         },
         { 
@@ -201,14 +201,14 @@ const storeItems = {
             name: 'Premium Bundle', 
             price: 250, 
             description: 'Contains: 3 Premium Raid Passes, 3 Incense', 
-            image: 'images/premium-bundle.png'
+            image: 'images/premium_bundle.png'
         },
         { 
             id: 'stardust-bundle', 
             name: 'Stardust Bundle', 
             price: 300, 
             description: 'Contains: 5 Star Pieces, 20 Ultra Balls', 
-            image: 'images/stardust-bundle.png'
+            image: 'images/stardust_bundle.png'
         }
     ]
 };
