@@ -173,7 +173,6 @@ const storeItems = {
             price: 19.99, 
             description: 'In-game currency for purchasing items', 
             image: 'images/pokecoins-2500.png',
-            isRealMoney: true
         }
     ],
     bundles: [
