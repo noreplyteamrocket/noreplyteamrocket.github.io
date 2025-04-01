@@ -589,3 +589,46 @@
     text-overflow: ellipsis; /* Add ellipsis for long text */
     text-align: center; /* Center-align text */
 }
+
+button.add-to-cart {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 2px solid #ddd;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.add-to-cart.added {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #4CAF50;
+}
+
+button {
+    transition: background-color 0.5s ease;
+}
+
+button.bounce {
+    animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* Style for the button when it's clicked (bounce effect) */
+button.add-to-cart.bounce {
+    animation: bounce 0.5s ease forwards;
+}

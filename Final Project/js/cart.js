@@ -8,16 +8,12 @@ function addToCart(e) {
     const button = e.target;
     const itemId = button.getAttribute('data-id');
     const category = button.getAttribute('data-category');
-    
-    // Find the item in storeItems
     const item = storeItems[category].find(i => i.id === itemId);
     if (!item) return;
-    
+
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    
-    // Check if item is already in cart
     const existingItem = cart.find(cartItem => cartItem.id === item.id);
-    
+
     if (existingItem) {
         existingItem.quantity += 1;
     } else {
@@ -26,19 +22,25 @@ function addToCart(e) {
             quantity: 1
         });
     }
-    
-    // Save and update cart
+
     localStorage.setItem('cart', JSON.stringify(cart));
     updateCart(cart);
-    
-    // Visual feedback
-    button.textContent = 'Added!';
+
+    button.classList.add('bounce');
     button.style.backgroundColor = '#4CAF50';
+
+    setTimeout(() => {
+        button.classList.remove('bounce');
+        button.style.backgroundColor = '';
+    }, 500);
+
+    button.textContent = 'Added!';
     setTimeout(() => {
         button.textContent = 'Add to Cart';
-        button.style.backgroundColor = '';
     }, 1000);
 }
+
+
 
 function updateCart(cart) {
     const cartItemsContainer = document.getElementById('cartItems');
@@ -225,8 +227,8 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCart(JSON.parse(localStorage.getItem('cart')) || []);
     
     // Add event listeners for cart buttons
-    if (document.getElementById('cartBtn')) {
-        document.getElementById('cartBtn').addEventListener('click', showCart);
+    if (document.getElementById('1')) {
+        document.getElementById('1').addEventListener('click', showCart);
     }
     
     if (document.getElementById('closeCart')) {
