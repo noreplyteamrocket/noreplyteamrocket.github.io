@@ -151,7 +151,6 @@ const storeItems = {
             price: 0.99, 
             description: 'In-game currency for purchasing items', 
             image: 'images/pokecoins-100.png',
-            isRealMoney: true
         },
         { 
             id: '550-coins', 
@@ -159,7 +158,6 @@ const storeItems = {
             price: 4.99, 
             description: 'In-game currency for purchasing items', 
             image: 'images/pokecoins-550.png',
-            isRealMoney: true,
             badge: 'BEST VALUE'
         },
         { 
@@ -168,7 +166,6 @@ const storeItems = {
             price: 9.99, 
             description: 'In-game currency for purchasing items', 
             image: 'images/pokecoins-1200.png',
-            isRealMoney: true
         },
         { 
             id: '2500-coins', 
