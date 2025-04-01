@@ -2,9 +2,9 @@
 .hero-carousel {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 700px;
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .carousel-slide {
@@ -107,7 +107,7 @@
     flex-direction: column; /* Stack content vertically */
     justify-content: space-between; /* Space between image and details */
     height: 350px; /* Fixed height for uniformity */
-    width: 100%; /* Ensure it fits the grid column */
+    width: 300px;
     max-width: 300px; /* Optional: Limit the maximum width */
     margin: 0 auto; /* Center the card within the grid */
 }
@@ -366,9 +366,18 @@
 .store-tabs {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
-    border-bottom: 2px solid var(--rocket-primary);
+    position: relative;
     padding: 0 20px;
+}
+
+.store-tabs::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Moves the line above */
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--rocket-primary);
 }
 
 .store-tab {
@@ -376,7 +385,7 @@
     margin: 0 5px;
     background-color: white;
     border: none;
-    border-radius: 5px 5px 0 0;
+    border-radius: 0 0 5px 5px;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
@@ -423,8 +432,7 @@
     flex-direction: column; /* Stack content vertically */
     justify-content: space-between; /* Space between image and details */
     height: 350px; /* Fixed height for uniformity */
-    width: 100%; /* Ensure it fits the grid column */
-    max-width: 300px; /* Optional: Limit the maximum width */
+    width: 300px; /* Ensure it fits the grid column */
     margin: 0 auto; /* Center the card within the grid */
 }
 
@@ -495,6 +503,8 @@
     overflow: hidden; /* Hide overflowing text */
     text-overflow: ellipsis; /* Add ellipsis for long text */
 }
+
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -579,4 +589,3 @@
     text-overflow: ellipsis; /* Add ellipsis for long text */
     text-align: center; /* Center-align text */
 }
-

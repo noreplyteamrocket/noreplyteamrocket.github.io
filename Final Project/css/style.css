@@ -136,6 +136,7 @@ body {
     transition: background-color 0.3s ease; 
 }
 
+
 /* Hover effect */
 .add-to-cart-btn:hover {
     background-color: #45a049; /* Darker green on hover */
