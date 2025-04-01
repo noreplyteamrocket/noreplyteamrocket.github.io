@@ -108,7 +108,7 @@ function initCarousel() {
 const storeItems = {
     featured: [
         { id: 'ultra-ball-100', name: 'Ultra Ball (100)', price: 800, description: 'The best performance with a high catch rate!', image: 'images/ultra_ball.png', badge: 'BEST SELLER' },
-        { id: 'super-incubator-3', name: 'Super Incubator (3)', price: 1500, description: 'Hatches Eggs 1.5× faster than a standard Incubator', image: 'images/incubator.png', badge: 'POPULAR' },
+        { id: 'super-incubator-3', name: 'Super Incubator (3)', price: 1500, description: 'Hatches Eggs 1.5× faster than a standard Incubator', image: 'images/Incubator.png', badge: 'POPULAR' },
         { id: 'star-piece-8', name: 'Star Piece (8)', price: 1000, description: 'Increases Stardust earned by 50% for 30 minutes', image: 'images/star.png' },
         { id: 'premium-raid-pass-3', name: 'Premium Raid Pass (3)', price: 250, description: 'Join a Raid Battle at a Gym', image: 'images/premium.png' }
     ],
@@ -182,7 +182,7 @@ const storeItems = {
             name: 'Daily Free Bundle', 
             price: 0, 
             description: 'Contains: 10 Poké Balls', 
-            image: 'images/free_bundle.png',
+            image: 'images/Free_Bundle.png',
             badge: 'FREE'
         },
         { 
@@ -190,7 +190,7 @@ const storeItems = {
             name: 'Special Bundle', 
             price: 1, 
             description: 'Contains: 1 Remote Raid Pass, 10 Great Balls', 
-            image: 'images/special_bundle.png',
+            image: 'images/Special_Bundle.png',
             badge: 'LIMITED'
         },
         { 
@@ -198,14 +198,14 @@ const storeItems = {
             name: 'Premium Bundle', 
             price: 250, 
             description: 'Contains: 3 Premium Raid Passes, 3 Incense', 
-            image: 'images/premium_bundle.png'
+            image: 'images/Premium_Bundle.png'
         },
         { 
             id: 'stardust-bundle', 
             name: 'Stardust Bundle', 
             price: 300, 
             description: 'Contains: 5 Star Pieces, 20 Ultra Balls', 
-            image: 'images/stardust_bundle.png'
+            image: 'images/Stardust_Bundle.png'
         }
     ]
 };
